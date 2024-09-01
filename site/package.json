@@ -1,0 +1,13 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit --minify",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}

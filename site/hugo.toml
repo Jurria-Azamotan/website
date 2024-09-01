@@ -1,7 +1,7 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Kaldi"
+languageCode = "es-es"
+languageLang = "es"
+title = "Jurria Azamonta"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
@@ -9,4 +9,11 @@ title = "Kaldi"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
-images = ["img/og-image.jpg"]
+  description = 'Text about my cool site'
+  images = ['site-feature-image.jpg']
+  title = 'My cool site'
+  [params.social]
+    facebook_admin = 'jsmith'
+[taxonomies]
+  series = 'series'
+

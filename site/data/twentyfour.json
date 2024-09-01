@@ -1,0 +1,23 @@
+{
+    "shows" : [
+        {
+            "day": "2017-01-04",
+            "title": "Muestra en el Instituto de valsequillo",
+            "image": "/images/home/salto.jpeg"
+        }
+    ],
+    "trails": [
+        {
+        "day": "2017-01-04",
+        "title": "Ruta del pozo de los morenos",
+        "image": "/images/home/salto.jpeg"
+    }
+    ],
+    "training": [
+        {
+            "day": "2017-01-04",
+            "title": "Entrenamiento de Salto a banda",
+            "image": "/images/home/salto.jpeg"
+        }
+    ]
+}

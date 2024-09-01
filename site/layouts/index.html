@@ -1,13 +1,37 @@
-{{ define "main" }}
+{{ define "main" }} 
+{{ partial "jumbotron" (dict "imageUrl" .Params.image) }}
+<section class="bg-gray-50 dark:bg-gray-800">
+  <div
+    class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6"
+  >
+    <!-- Row -->
+    <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+      <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+        <h2
+          class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        >
+          Salto del Pastor
+        </h2>
+        <p class="mb-8 font-light lg:text-xl">
+          El Salto del Pastor es una técnica de desplazamiento por terrenos
+          montañosos que se realiza con la ayuda de un bastón largo y flexible.
+          Se trata de un medio de transporte que sobrevivió gracias a los
+          pastores y que en la actualidad se ha convertido en un deporte
+          tradicional en las Islas Canarias.
+        </p>
+      </div>
+      <img
+        class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+        src="./images/home/salto.jpeg"
+        alt="Grupo de saltadores caminando por la montaña"
+      />
+    </div>
+  </div>
+</section>
+<!-- End block -->
+<!-- Start block -->
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
+{{ partial "social-buttons" }}
+{{ partial "faq" .Params }} 
 
 {{ end }}

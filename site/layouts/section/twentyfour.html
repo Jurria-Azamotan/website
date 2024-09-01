@@ -1,0 +1,26 @@
+{{ define "main" }} 
+
+<section class="pt-8">
+  <pre>{{ debug.Dump site.Data.twentyfour }}</pre>
+  {{ range  .Site.Data.twentyfour.shows }}
+<p>{{ .day }}</p>
+<p>{{ .title }}</p>
+<img src="{{.image}}" />
+{{ end }}
+
+{{ range  .Site.Data.twentyfour.trails }}
+<p>{{ .day }}</p>
+<p>{{ .title }}</p>
+<img src="{{.image}}" />
+{{ end }}
+
+
+{{ range  .Site.Data.twentyfour.training }}
+<p>{{ .day }}</p>
+<p>{{ .title }}</p>
+<img src="{{.image}}" />
+{{ end }}
+
+</section>
+
+{{end}}
